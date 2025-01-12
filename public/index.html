@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seth Ortega — IT Service Desk Analyst based in Auckland, New Zealand. Hands-on endpoint support, Windows troubleshooting, and enterprise IT.">
+    <meta name="author" content="Seth Angelo Ortega">
+    <title>Seth Ortega</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="c"></canvas>
+
+    <!-- Main Content -->
+    <div class="main-container">
+
+        <!-- Home Section -->
+        <div id="home" class="section">
+            <div class="hero-content">
+                <span class="hero-greeting">KIA ORA,</span>
+                <h1>I'm Seth Ortega.</h1>
+                <p class="hero-role">IT Service Desk Analyst &nbsp;&middot;&nbsp; Datacom &nbsp;&middot;&nbsp; Auckland, NZ</p>
+                <p class="hero-sub">Hands-on endpoint support, Windows troubleshooting, and enterprise IT.</p>
+                <a href="#about" class="hero-cta">Learn More</a>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div id="about" class="section">
+            <div class="section-inner">
+                <h2>About Me</h2>
+                <p>I'm an early-career IT support professional currently working as a Service Desk Analyst at Datacom in Auckland. My technical roots are in real device work — Windows troubleshooting, hardware diagnostics, BIOS/boot handling, and endpoint prep from 2+ years in a high-volume ITAD environment at Echo Technology Lifecycle Solutions.</p>
+                <p>I came to IT through genuine curiosity. A Computer Engineering background from the University of San Carlos and years of learning by doing have given me a practical, systematic way of working through problems. I hold Microsoft 365 Fundamentals (MS-900) and I'm actively building toward desktop support, endpoint support, and junior systems pathways.</p>
+                <p>Outside of work, I build things: an internal XML parser tool that eliminated repetitive data entry at my previous job, a live community website for a local Marae, and this portfolio. I look for ways to improve repetitive processes, not just get through them.</p>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div id="experience" class="section section-tall">
+            <div class="section-inner">
+                <h2>Experience</h2>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="job-title">IT Service Desk Analyst</span>
+                                <span class="job-period">2026 &ndash; Present</span>
+                            </div>
+                            <span class="company-name">Datacom &mdash; Auckland, NZ</span>
+                            <p>Frontline enterprise IT support: logging and triaging incidents, troubleshooting hardware, software, access, and endpoint issues, documenting resolutions, and escalating through structured channels. Building direct experience in ticket-driven support, user communication, and corporate service delivery.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <span class="job-title">IT Technician</span>
+                                <span class="job-period">2023 &ndash; 2026</span>
+                            </div>
+                            <span class="company-name">Echo Technology Lifecycle Solutions &mdash; Auckland, NZ</span>
+                            <p>ITAD environment: Windows endpoint troubleshooting, hardware diagnostics, BIOS/boot/imaging workflows, secure data erasure, ERP-based asset tracking, and device processing at scale. Onsite refresh and deployment work at client sites including HSBC and AWS offices. Built an internal tool that automated device data extraction from Blancco reports, significantly reducing manual data entry across remarketing workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Skills</h3>
+                    <div class="skill-groups">
+                        <div class="skill-group">
+                            <span class="skill-group-label">Support &amp; Systems</span>
+                            <div class="skill-tags">
+                                <span class="tag">Windows 10/11</span>
+                                <span class="tag">BIOS / UEFI</span>
+                                <span class="tag">Hardware Diagnostics</span>
+                                <span class="tag">IT Service Desk</span>
+                                <span class="tag">Endpoint Troubleshooting</span>
+                                <span class="tag">Imaging / Rebuild</span>
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">Microsoft 365</span>
+                                <span class="tag">PowerShell</span>
+                                <span class="tag">Networking Fundamentals</span>
+                                <span class="tag">macOS</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-group-label">Development</span>
+                            <div class="skill-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SvelteKit</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">HTML / CSS</span>
+                                <span class="tag">React</span>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <span class="skill-group-label">Certifications &amp; Education</span>
+                            <div class="skill-tags">
+                                <span class="tag tag-cert">MS-900 &mdash; Microsoft 365 Fundamentals</span>
+                                <span class="tag">B.Sc. Computer Engineering (partial) &mdash; Univ. of San Carlos, PH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="section section-tall">
+            <div class="section-inner">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Blancco XML Stock Extractor</h3>
+                        <p class="project-context">Internal Tool &mdash; Echo Technology Lifecycle Solutions</p>
+                        <p>Built a web app that parses Blancco data erasure XML reports and extracts device specs, make/model, serials, and hardware details into structured inventory sheets. Removed large amounts of repetitive manual data entry from remarketing workflows &mdash; recognised internally for cost-saving potential.</p>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">XML Parsing</span>
+                            <span class="tag">Process Automation</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Te Kotahitanga Marae Website</h3>
+                        <p class="project-context">Community Web Application &mdash; Live</p>
+                        <p>Designed and built a live website for Te Kotahitanga Marae, a local community organisation. End-to-end ownership: structure, content, and deployment, with a real stakeholder and audience.</p>
+                        <div class="skill-tags">
+                            <span class="tag">SvelteKit</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>This Portfolio</h3>
+                        <p class="project-context">Personal Site</p>
+                        <p>Built from scratch with vanilla JS, Three.js for the particle background, and Firebase for contact form storage. Focused on clean layout, smooth scroll snapping, and minimal dark design.</p>
+                        <div class="skill-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Three.js</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contacts" class="section">
+            <h2>Get in Touch</h2>
+            <p>Want to connect? Leave your email and I'll get back to you.</p>
+            
+            <form id="contactForm">
+                <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div id="responseMessage"></div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <nav class="navbar">
+            <img src="img/your-portrait.jpg" alt="Seth Ortega" class="logo">
+            <a href="#home"><h1>GTARISTA</h1></a>
+            <a href="#about">ABOUT</a>
+            <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contacts">CONTACT</a>
+        </nav>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/sethortega8" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/gtarista" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="img/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://www.facebook.com/ggtarista/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://open.spotify.com/user/12148579308?si=80b01e70be3f4d49" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="img/spotify-icon.png" alt="Spotify">
+            </a>
+            <a href="https://www.instagram.com/gtarista/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                <img src="img/instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r110/three.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Firebase -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyD0jvuT3tZRoRPuSMrXbWUYlOr7GKw_Mxk",
+            authDomain: "resume-7945f.firebaseapp.com",
+            projectId: "resume-7945f",
+            storageBucket: "resume-7945f.firebasestorage.app",
+            messagingSenderId: "817655712575",
+            appId: "1:817655712575:web:39f4ecae6b282ac2baa18a",
+            measurementId: "G-GK6B5GJQF3"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const email = document.getElementById("userEmail").value;
+            try {
+                await addDoc(collection(db, "contacts"), { email });
+                alert("Your email has been recorded! Thank you for getting in touch.");
+                form.reset();
+            } catch (err) {
+                console.error("Error saving contact:", err);
+                alert("An error occurred while submitting. Please try again.");
+            }
+        });
+    </script>
+</body>
+
+</html>  
