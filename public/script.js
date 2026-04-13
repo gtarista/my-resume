@@ -123,58 +123,16 @@ class Canvas {
 }
 
 new Canvas();
-// Scroll snap and smooth scroll logic
-mainContainer.addEventListener('wheel', (event) => {
-  if (isScrolling) return;
-  isScrolling = true;
 
-  // Preventing unnecessary scroll adjustments
-  const direction = event.deltaY > 0 ? 1 : -1;
-  const currentScroll = mainContainer.scrollTop;
-  const viewportHeight = window.innerHeight;
-  const nextScroll = direction > 0
-    ? Math.ceil(currentScroll / viewportHeight) * viewportHeight
-    : Math.floor(currentScroll / viewportHeight) * viewportHeight;
-
-  if (nextScroll === currentScroll) {
-    isScrolling = false;
-    return;
-  }
-
-  mainContainer.scrollTo({ top: nextScroll, behavior: 'smooth' });
-
-  // Add smooth scrolling buffer to prevent "jumping"
-  setTimeout(() => {
-    isScrolling = false;
-  }, 800);
-});
-
-// Navbar smooth scroll (no change needed, works with snapping)
+// Navbar smooth scroll
 document.querySelectorAll('.navbar a').forEach(link => {
   link.addEventListener('click', function (event) {
     event.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
-
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   });
-});
-
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevents the page from reloading
-  
-  // Grab the email value entered by the user
-  const userEmail = document.getElementById("userEmail").value;
-  
-  // Simulate form submission
-  if (userEmail) {
-      document.getElementById("responseMessage").innerHTML = 
-          `Thank you for submitting your email: ${userEmail}. I will get in touch soon!`;
-  } else {
-      document.getElementById("responseMessage").innerHTML = 
-          'Please enter a valid email address.';
-  }
 });
 
