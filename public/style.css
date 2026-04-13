@@ -327,7 +327,9 @@ body {
 }
 
 .tag {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     padding: 5px 12px;
     font-size: 12px;
     font-weight: 400;
@@ -335,6 +337,12 @@ body {
     background: rgba(255, 255, 255, 0.07);
     border: 1px solid rgba(255, 255, 255, 0.22);
     border-radius: 4px;
+}
+
+.tag i {
+    font-size: 14px;
+    line-height: 1;
+    flex-shrink: 0;
 }
 
 .tag-cert {
