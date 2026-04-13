@@ -262,7 +262,7 @@ body {
     top: 10px;
     bottom: 10px;
     width: 1px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .timeline-item {
@@ -282,8 +282,8 @@ body {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
 }
 
@@ -349,7 +349,7 @@ body {
     font-weight: 600;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.26);
+    color: rgba(255, 255, 255, 0.45);
 }
 
 .skill-tags {
@@ -360,18 +360,18 @@ body {
 
 .tag {
     display: inline-block;
-    padding: 3px 9px;
+    padding: 4px 10px;
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.13);
+    color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 3px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .tag-cert {
-    border-color: rgba(120, 190, 255, 0.3);
-    color: rgba(170, 215, 255, 0.8);
-    background: rgba(120, 190, 255, 0.04);
+    border-color: rgba(120, 190, 255, 0.5);
+    color: rgba(170, 215, 255, 0.9);
+    background: rgba(120, 190, 255, 0.08);
 }
 
 /* PROJECTS */
@@ -386,16 +386,16 @@ body {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     padding: 18px 20px;
     transition: border-color 0.2s, background 0.2s;
 }
 
 .project-card:hover {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.09);
 }
 
 .project-card h3 {
